@@ -50,9 +50,11 @@ To create a terminal-free .exe with a custom icon:
 Save your icon as vtu_icon.ico in the same folder
 
 Run:
+
     ```bash
     pyinstaller --onefile --noconsole --icon="vtu_icon.ico" VTU_login_bot.py
-Your .exe will be created inside the dist/ folder.
+
+Your `.exe` will be created inside the dist/ folder.
 
 ✅ You can now create a desktop shortcut with the custom icon.
 
