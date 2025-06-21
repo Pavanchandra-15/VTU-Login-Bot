@@ -51,7 +51,7 @@ Save your icon as vtu_icon.ico in the same folder
 
 Run:
 
-    ```bash
+    
     pyinstaller --onefile --noconsole --icon="vtu_icon.ico" VTU_login_bot.py
 
 Your `.exe` will be created inside the dist/ folder.
@@ -59,14 +59,15 @@ Your `.exe` will be created inside the dist/ folder.
 ✅ You can now create a desktop shortcut with the custom icon.
 
 
-⚠️ Development Challenges Faced
-Button Click Failure: .click() didn’t work due to overlays. Solved using JavaScript click() via driver.execute_script().
-Hidden Login Button: Resolved by using scrollIntoView() before clicking.
-Browser Auto-Close: Removed input() (which crashes in .exe) and used an infinite loop (while True) to keep Chrome open after login.
-Non-console Execution: Used PyInstaller’s --noconsole option and avoided any input prompts to prevent .exe from crashing.
-Icon Embedding: Packaged with a .ico file to improve presentation and usability.
+⚠️ Development Challenges Faced  
 
+Button Click Failure: .click() didn’t work due to overlays. Solved using JavaScript click() via driver.execute_script().  
+Hidden Login Button: Resolved by using scrollIntoView() before clicking.  
+Browser Auto-Close: Removed input() (which crashes in .exe) and used an infinite loop (while True) to keep Chrome open after login.  
+Non-console Execution: Used PyInstaller’s --noconsole option and avoided any input prompts to prevent .exe from crashing.  
+Icon Embedding: Packaged with a .ico file to improve presentation and usability.  
 
+---
 📌 Notes
 Built for educational purposes and to demonstrate automation skills.
 Do not use automation on any platform that prohibits it.
