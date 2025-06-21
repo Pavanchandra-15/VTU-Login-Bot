@@ -44,7 +44,7 @@ Fill in your VTU email and password
     ```bash
     python VTU_login_bot.py
 
-->How to Convert to .exe (Optional)
+## How to Convert to .exe (Optional)
 To create a terminal-free .exe with a custom icon:
 
 Save your icon as vtu_icon.ico in the same folder
@@ -59,7 +59,7 @@ Your `.exe` will be created inside the dist/ folder.
 ✅ You can now create a desktop shortcut with the custom icon.
 
 
-⚠️ Development Challenges Faced  
+## ⚠️ Development Challenges Faced  
 
 Button Click Failure: .click() didn’t work due to overlays. Solved using JavaScript click() via driver.execute_script().  
 Hidden Login Button: Resolved by using scrollIntoView() before clicking.  
